@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>矿脉侧写 · Pit Briefing</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body class="theme-industrial">
+    <div class="grid-overlay" aria-hidden="true"></div>
+    <header class="site-header shell">
+      <div class="logo">
+        <span class="dot"></span>
+        <div>
+          <strong id="site-title">矿脉侧写</strong>
+          <p id="site-tagline">面向采动现场的安全与调度日志</p>
+        </div>
+      </div>
+      <nav>
+        <a href="index.html" aria-current="page">首页</a>
+        <a href="article.html">案例</a>
+        <a href="about.html">关于</a>
+      </nav>
+    </header>
+
+    <main class="shell">
+      <section class="hero">
+        <div class="hero-text panel">
+          <p class="hero-label">DISPATCH BRIEF</p>
+          <h1 id="hero-title">露天矿调度台 43 号工况简报</h1>
+          <p id="hero-summary">
+            夜班巡检记录了 43 号采区的车辆预警、司机状态与排土场姿态，所有数据实时回传到调度台，为下一次巡视留下一份可追溯的底稿。
+          </p>
+          <div class="hero-meta">
+            <div class="author-chip">
+              <img id="author-avatar" src="images/头像.png" alt="作者头像" />
+              <div>
+                <p id="author-name">赵弋</p>
+                <span id="author-role">矿山智能化工程师</span>
+              </div>
+            </div>
+            <p class="publish-date">
+              <span>更新于</span>
+              <time id="hero-date" datetime="2025-11-12">2025 年 11 月 12 日</time>
+            </p>
+          </div>
+          <div class="hero-actions">
+            <a class="btn primary" href="article.html">打开调度记录</a>
+            <a class="btn ghost" href="about.html">认识记录者</a>
+          </div>
+        </div>
+        <div class="hero-card panel">
+          <p class="card-label" id="hero-card-label">系统档案</p>
+          <h3 id="hero-card-title">OTW 驾驶辅助预警系统</h3>
+          <p id="hero-card-body">
+            车载终端、4G 边缘网络与监控平台形成闭环，完成对车辆、人员、地形的三线巡检。
+          </p>
+          <div class="hero-card-metrics">
+            <div>
+              <span class="metric-label">最后刷新</span>
+              <span class="metric-value" id="hero-card-timestamp">22:40</span>
+            </div>
+            <div>
+              <span class="metric-label">适配矿区</span>
+              <span class="metric-value" id="hero-card-target">白音华蒙东</span>
+            </div>
+          </div>
+          <a class="text-link" id="hero-card-link" href="article.html">查看部署记录 →</a>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="section-label">最新工况</p>
+          <h2>重点调度记录</h2>
+        </div>
+        <div id="featured-posts" class="post-grid"></div>
+      </section>
+
+      <section class="section notes">
+        <div class="section-heading">
+          <p class="section-label">日志片段</p>
+          <h2>现场语音转写</h2>
+        </div>
+        <ul id="note-list" class="notes-list"></ul>
+      </section>
+    </main>
+
+    <footer class="site-footer shell">
+      <div>
+        <strong id="footer-author">PitWatch Ops</strong>
+        <p id="footer-tagline">面向采场的安全与智能调度档案</p>
+      </div>
+      <div class="footer-links">
+        <a id="footer-email" href="mailto:ops@pitwatch.example.com">ops@pitwatch.example.com</a>
+        <a id="footer-social" href="#" target="_blank" rel="noreferrer">@PitWatchOps</a>
+      </div>
+    </footer>
+
+    <noscript class="noscript">
+      本站的关键信息通过 JavaScript 动态填充。如果你的浏览器禁用脚本，可以直接编辑
+      <code>assets/js/site.js</code> 中的数据段来调整展示内容。
+    </noscript>
+
+    <script src="assets/js/site.js"></script>
+  </body>
+</html>
