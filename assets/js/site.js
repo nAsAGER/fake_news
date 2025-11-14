@@ -19,7 +19,7 @@ const BLOG_SETUP = {
     title: "露天矿调度台 43 号工况简报",
     summary:
       "夜班巡检记录了 43 号采区的车辆预警、司机状态与排土场姿态，所有数据实时回传到调度台，为下一次巡视留下一份可追溯的底稿。",
-    date: "2025-9-20",
+    date: "2025-09-20",
     dateLabel: "2025 年 9 月 20 日",
   },
   heroHighlight: {
@@ -41,7 +41,7 @@ const BLOG_SETUP = {
     ],
     timeline: [
       { when: "2025.09", text: "OTW V3.2 在白音华蒙东露天矿上线，全部调度屏实时联动。" },
-      { when: "2025.08", text: "排土场电子围栏与侧撞预警模块完成二次迭代。" },
+      { when: "2025.07", text: "排土场电子围栏与侧撞预警模块完成二次迭代。" },
       { when: "2025.05", text: "完成边坡位移监测数据接入调度平台的验证。" },
     ],
   },
@@ -50,8 +50,8 @@ const BLOG_SETUP = {
 const FEATURED_POSTS = [
   {
     title: "排土场防侧撞策略复盘",
-    date: "2025-8-09",
-    dateLabel: "2025.8.09",
+    date: "2025-08-10",
+    dateLabel: "2025.08.10",
     summary: "自卸车进入排土场即触发电子围栏，叠加坡面雷达回传的姿态数据，避免高位侧翻。",
     link: "article.html",
     tag: "防护策略",
@@ -60,8 +60,8 @@ const FEATURED_POSTS = [
   },
   {
     title: "大班次驾驶员疲劳识别调优",
-    date: "2025-7-28",
-    dateLabel: "2025.7.28",
+    date: "2025-07-05",
+    dateLabel: "2025.07.05",
     summary: "以 4,200 条驾驶行为样本训练识别模型，在 10km/h 以上的工况下实时推送提醒。",
     link: "article.html",
     tag: "行为数据",
@@ -70,8 +70,8 @@ const FEATURED_POSTS = [
   },
   {
     title: "四屏联动调度台部署记",
-    date: "2025-5-12",
-    dateLabel: "2025.5.12",
+    date: "2025-06-01",
+    dateLabel: "2025.06.01",
     summary: "车载、APP、PC 与大屏共享同一数据通道，调度人员可以跨端回放轨迹与处理告警。",
     link: "article.html",
     tag: "系统落地",
@@ -91,8 +91,8 @@ const SAMPLE_ARTICLE = {
   title: "露天煤矿车辆驾驶辅助预警系统：为矿山安全装上“智慧之眼”",
   excerpt:
     "在白音华蒙东露天煤矿的夜班调度台，我们将 OTW 驾驶辅助预警系统接入车载终端和 4G 边缘网络，尝试把“速度、身份、地形”三条底线收束到一块屏幕上。",
-  date: "2025-11-10",
-  dateLabel: "2025 年 11 月 10 日",
+  date: "2025-09-20",
+  dateLabel: "2025 年 9 月 20 日",
   cover: "images/2.png",
   coverCaption: "四屏联动界面把车辆状态、司机行为与排土场姿态并列呈现。",
   blocks: [
