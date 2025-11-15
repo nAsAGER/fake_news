@@ -16,17 +16,17 @@ const BLOG_SETUP = {
     avatar: "images/头像.png",
   },
   hero: {
-    title: "露天矿调度台 43 号工况简报",
+    title: "OTW 驾驶辅助预警系统上线纪要",
     summary:
-      "夜班巡检记录了 43 号采区的车辆预警、司机状态与排土场姿态，所有数据实时回传到调度台，为下一次巡视留下一份可追溯的底稿。",
-    date: "2025-09-20",
-    dateLabel: "2025 年 9 月 20 日",
+      "OTW 车载终端、4G/北斗定位与监控平台完成联调，调度台得以实时收敛速度、身份、地形三条安全底线。这份记录整理了系统架构与一线场景。",
+    date: "2025-09-30",
+    dateLabel: "2025 年 9 月 30 日",
   },
   heroHighlight: {
     label: "系统档案",
     title: "OTW 驾驶辅助预警系统",
     body: "车载终端、4G 边缘网络与监控平台组成闭环，覆盖速度、身份与排土场三条底线。",
-    timestamp: "9 月 20 日 22:40",
+    timestamp: "9 月 30 日 21:30",
     target: "白音华蒙东",
     linkLabel: "查看部署记录 →",
     linkHref: "article.html",
@@ -49,6 +49,26 @@ const BLOG_SETUP = {
 
 const FEATURED_POSTS = [
   {
+    title: "OTW 车辆驾驶辅助预警系统落地记",
+    date: "2025-09-30",
+    dateLabel: "2025.09.30",
+    summary: "记录 OTW 系统在矿卡车队的硬件部署、十项联动功能与人员定位协同。",
+    link: "article2.html",
+    tag: "系统部署",
+    metricLabel: "监控终端",
+    metricValue: "148 台",
+  },
+  {
+    title: "露天矿车辆驾驶辅助预警系统：为矿山安全装上“智慧之眼”",
+    date: "2025-09-20",
+    dateLabel: "2025.09.20",
+    summary: "聚焦白音华蒙东露天矿的夜班调度案例，梳理 OTW 系统的十项预警功能。",
+    link: "article.html",
+    tag: "案例更新",
+    metricLabel: "告警字段",
+    metricValue: "10 项",
+  },
+  {
     title: "排土场防侧撞策略复盘",
     date: "2025-08-10",
     dateLabel: "2025.08.10",
@@ -57,26 +77,6 @@ const FEATURED_POSTS = [
     tag: "防护策略",
     metricLabel: "触发预警",
     metricValue: "8 次",
-  },
-  {
-    title: "大班次驾驶员疲劳识别调优",
-    date: "2025-07-05",
-    dateLabel: "2025.07.05",
-    summary: "以 4,200 条驾驶行为样本训练识别模型，在 10km/h 以上的工况下实时推送提醒。",
-    link: "article.html",
-    tag: "行为数据",
-    metricLabel: "识别准确率",
-    metricValue: "97%",
-  },
-  {
-    title: "四屏联动调度台部署记",
-    date: "2025-06-01",
-    dateLabel: "2025.06.01",
-    summary: "车载、APP、PC 与大屏共享同一数据通道，调度人员可以跨端回放轨迹与处理告警。",
-    link: "article.html",
-    tag: "系统落地",
-    metricLabel: "并发车辆",
-    metricValue: "126",
   },
 ];
 
@@ -277,13 +277,263 @@ const SAMPLE_ARTICLE = {
   ],
   suggestions: [
     {
+      title: "OTW 车辆驾驶辅助预警系统落地记",
+      description: "拆解全部十项功能与人员定位模块，覆盖硬件到软件的全链路。",
+      link: "article2.html",
+    },
+    {
       title: "边坡位移监测闭环",
       description: "将 GNSS 与激光雷达接入调度台，形成边坡健康度评分。",
       link: "article.html",
     },
+  ],
+};
+
+const ARTICLE_TWO = {
+  title: "OTW 车辆驾驶辅助预警系统：矿卡调度的全域感知底座",
+  excerpt:
+    "这一次，我们把 OTW 系统的硬件终端、4G/北斗定位与监控平台做成可组合积木，目标是在矿山驾驶决策里同步“速度、身份、地形”三类关键量。",
+  date: "2025-09-30",
+  dateLabel: "2025 年 9 月 30 日",
+  cover: "images/2-1.png",
+  coverCaption: "OTW 车载终端与监管平台的联动界面。",
+  blocks: [
     {
-      title: "夜班调度数字孪生",
-      description: "利用车载摄像头与数字孪生模型还原夜班作业全过程。",
+      type: "text",
+      content:
+        "OTW 系统由车载终端、4G 网络与监控平台三部分组成，内置高速处理器、嵌入式系统与 H.265/H.264 编解码技术，配合 GPS/北斗定位与抗震结构，让硬件可以稳定安放在重载矿卡上。",
+    },
+    {
+      type: "image",
+      src: "images/2-2.png",
+      alt: "系统组件示意",
+      caption: "终端、监管平台与“矿安助手”APP 构成前后端闭环。",
+    },
+    { type: "heading", content: "十项功能：用数据守住驾驶底线" },
+    {
+      type: "text",
+      content:
+        "十项功能围绕速度、人车身份、车辆分布与排土场安全展开，我们把它拆成“大数据六项 + 电子地图四项”，调度员可以在一个界面里查看所有态势。",
+    },
+    {
+      type: "feature-grid",
+      items: [
+        {
+          label: "01",
+          title: "超速报警",
+          body: "实时测速，超过 38km/h 即语音提示，40km/h 且持续 10s 会上传调度室并打印罚单。",
+        },
+        {
+          label: "02",
+          title: "前车碰撞预警",
+          body: "分析相对碰撞时间，低于 1.7s 时语音提醒，避免追尾。",
+        },
+        {
+          label: "03",
+          title: "疲劳驾驶识别",
+          body: "当车速高于 10km/h 且出现闭眼/打哈欠 3s 以上，抓拍 10s 视频上报。",
+        },
+        {
+          label: "04",
+          title: "接打电话检测",
+          body: "识别驾驶员接打手机动作并语音提示“请勿拨打手机”。",
+        },
+        {
+          label: "05",
+          title: "人车验证",
+          body: "车辆点火即刷脸，比对培训合格名单，不匹配直接报警锁车。",
+        },
+        {
+          label: "06",
+          title: "在线设备数量",
+          body: "实时统计运输车、采掘设备、辅助车等五大类装备在线数。",
+        },
+      ],
+    },
+    {
+      type: "image",
+      src: "images/2-3.png",
+      alt: "超速报警界面",
+      caption: "调度平台实时显示超速字段与打印记录。",
+    },
+    {
+      type: "image",
+      src: "images/2-4.png",
+      alt: "前车碰撞提醒",
+      caption: "基于视频分析的前车碰撞时间预测。",
+    },
+    {
+      type: "image",
+      src: "images/2-5.png",
+      alt: "疲劳识别界面",
+      caption: "疲劳驾驶抓拍 10 秒视频与截图，自动上传后台。",
+    },
+    {
+      type: "image",
+      src: "images/2-6.png",
+      alt: "驾驶状态细节",
+      caption: "结合眼帘、打哈欠等特征判定疲劳级别。",
+    },
+    {
+      type: "image",
+      src: "images/2-7.png",
+      alt: "接打电话检测",
+      caption: "检测到驾驶员持机动作后立即语音提示。",
+    },
+    {
+      type: "image",
+      src: "images/2-8.png",
+      alt: "人车验证界面",
+      caption: "刷脸通过后才允许车辆离开发车线。",
+    },
+    {
+      type: "text",
+      content:
+        "在线设备统计部分把五大类装备打包成可视化清单：公司层可查看子单位评级及违规总数，现场单位则掌握自己车队的在线量，为调度与检修提供事实依据。",
+    },
+    {
+      type: "image",
+      src: "images/2-9.png",
+      alt: "在线设备统计图",
+      caption: "调度端查看五大类设备的实时在线数量与违规分布。",
+    },
+    {
+      type: "image",
+      src: "images/2-10.png",
+      alt: "设备评级面板",
+      caption: "按单位输出评级状态与累计违规次数。",
+    },
+    {
+      type: "text",
+      content:
+        "手机端“矿安助手”同步在线清单与告警，管理者可以脱离值班室快速巡查。动态报表将实时数据以表格方式呈现，支持按标段、车辆类型自定义查询。",
+    },
+    {
+      type: "image",
+      src: "images/2-11.png",
+      alt: "手机端界面",
+      caption: "移动端查看实时车辆数与关键提醒。",
+    },
+    {
+      type: "image",
+      src: "images/2-12.png",
+      alt: "动态报表查询栏",
+      caption: "按标段或车辆类型过滤在线作业车辆。",
+    },
+    {
+      type: "image",
+      src: "images/2-13.png",
+      alt: "车辆类型分布",
+      caption: "展示所选标段的车辆类型与在线情况。",
+    },
+    {
+      type: "image",
+      src: "images/2-14.png",
+      alt: "在线车辆列表",
+      caption: "对每台车辆的在线状态与工况进行明细记录。",
+    },
+    { type: "heading", content: "电子地图联动的四项功能" },
+    {
+      type: "text",
+      content:
+        "在矿山模拟电子地图上，我们扩展了定位、轨迹、电子围栏与智能防侧撞四项能力，让调度台从宏观看清车辆、从微观锁定风险。",
+    },
+    {
+      type: "image",
+      src: "images/2-15.png",
+      alt: "车辆定位画面",
+      caption: "矿区电子地图实时打点每一台车辆的位置。",
+    },
+    {
+      type: "text",
+      content:
+        "轨迹回放记录每一次行驶路径，检查车辆是否按作业计划执行，帮助事故追溯与路线优化。",
+    },
+    {
+      type: "image",
+      src: "images/2-16.png",
+      alt: "轨迹回放界面",
+      caption: "可选择车辆和时间段查看完整行驶轨迹。",
+    },
+    {
+      type: "text",
+      content:
+        "电子围栏与防侧撞策略依附在地图上：车辆越界即报警，自卸车进入排土场自动打开防侧撞提示，提醒保持侧向距离。",
+    },
+    {
+      type: "image",
+      src: "images/2-17.png",
+      alt: "电子围栏报警",
+      caption: "进入非授权区域立即触发越界警示。",
+    },
+    {
+      type: "image",
+      src: "images/2-18.png",
+      alt: "智能防侧撞界面",
+      caption: "排土场区域自动启用防侧撞策略，提示危险区。",
+    },
+    { type: "heading", content: "远程调度与语音联动" },
+    {
+      type: "text",
+      content:
+        "平台支持远程对讲、监听以及 TTS 文字播报，调度员可以批量向在线车辆发布指令。同时提供多路视频查看、轨迹查询与里程统计，按权限划分不同层级的可视内容。",
+    },
+    { type: "heading", content: "人员定位系统" },
+    {
+      type: "text",
+      content:
+        "矿山人员定位系统基于北斗与无线通信技术，实现井下/露天的实时定位、安全监管，实现实时定位、轨迹追踪、区域报警与人车协同四大子功能。",
+    },
+    {
+      type: "image",
+      src: "images/2-19.png",
+      alt: "人员定位界面",
+      caption: "实时显示人员在区域内的坐标与状态。",
+    },
+    {
+      type: "image",
+      src: "images/2-20.png",
+      alt: "人员地图总览",
+      caption: "在电子地图上查看多区域的人员分布。",
+    },
+    {
+      type: "text",
+      content:
+        "轨迹追踪模块记录人员移动路线，可随时回放历史轨迹，确保任何一段行动都能被追溯。",
+    },
+    {
+      type: "image",
+      src: "images/2-21.png",
+      alt: "人员轨迹回放",
+      caption: "按时间轴回放人员的完整移动路径。",
+    },
+    {
+      type: "text",
+      content:
+        "区域报警在人员进入禁区或停留超时后立即告警，人车协同模块则把人员位置与车辆定位绑定，方便调度统一管理。",
+    },
+    {
+      type: "image",
+      src: "images/2-22.png",
+      alt: "区域报警示意",
+      caption: "禁入区域触发高优先级提醒。",
+    },
+    {
+      type: "image",
+      src: "images/2-23.png",
+      alt: "人车协同界面",
+      caption: "人员上车后，轨迹与车辆信息实现绑定显示。",
+    },
+  ],
+  suggestions: [
+    {
+      title: "露天矿车辆驾驶辅助预警系统：智慧之眼",
+      description: "聚焦白音华蒙东露天矿夜班的 OTW 工况复盘。",
+      link: "article.html",
+    },
+    {
+      title: "排土场防侧撞策略复盘",
+      description: "继续延展 OTW 系统在排土场的侧撞保护策略。",
       link: "article.html",
     },
   ],
@@ -420,22 +670,25 @@ const blockToHTML = (block) => {
 
 const renderArticle = () => {
   if (!select("#article-title")) return;
-  fillText(["#article-title"], SAMPLE_ARTICLE.title);
-  fillText(["#article-excerpt"], SAMPLE_ARTICLE.excerpt);
-  fillText(["#article-date"], SAMPLE_ARTICLE.dateLabel);
-  fillAttr(["#article-date"], "datetime", SAMPLE_ARTICLE.date);
-  fillAttr(["#article-cover"], "src", SAMPLE_ARTICLE.cover);
-  fillAttr(["#article-cover"], "alt", SAMPLE_ARTICLE.coverCaption);
-  fillText(["#article-cover-caption"], SAMPLE_ARTICLE.coverCaption);
+  const articleKey = document.body?.dataset?.article;
+  const articleData = articleKey === "article2" ? ARTICLE_TWO : SAMPLE_ARTICLE;
+
+  fillText(["#article-title"], articleData.title);
+  fillText(["#article-excerpt"], articleData.excerpt);
+  fillText(["#article-date"], articleData.dateLabel);
+  fillAttr(["#article-date"], "datetime", articleData.date);
+  fillAttr(["#article-cover"], "src", articleData.cover);
+  fillAttr(["#article-cover"], "alt", articleData.coverCaption);
+  fillText(["#article-cover-caption"], articleData.coverCaption);
 
   const body = select("#article-body");
   if (body) {
-    body.innerHTML = SAMPLE_ARTICLE.blocks.map(blockToHTML).join("");
+    body.innerHTML = articleData.blocks.map(blockToHTML).join("");
   }
 
   const suggestionList = select("#article-suggestions");
   if (suggestionList) {
-    suggestionList.innerHTML = SAMPLE_ARTICLE.suggestions
+    suggestionList.innerHTML = articleData.suggestions
       .map(
         (item) => `
         <li>
