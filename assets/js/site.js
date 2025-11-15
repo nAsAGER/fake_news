@@ -29,7 +29,7 @@ const BLOG_SETUP = {
     timestamp: "9 月 30 日 21:30",
     target: "白音华蒙东",
     linkLabel: "查看部署记录 →",
-    linkHref: "article.html",
+    linkHref: "article2.html",
   },
   about: {
     intro:
